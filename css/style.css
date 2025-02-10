@@ -22,111 +22,196 @@ body {
     font-size: 18px; /* Tamanho da fonte base aumentado */
 }
 
-/* Container */
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #0b0b24;
-    color: white;
-}
-
-header {
-    background-color: #ff0043;
-    padding: 10px 0;
-    text-align: center;
-}
-
-header img {
-    max-width: 150px;
-}
+  /* ______________
+/* Area Nav */
 
 nav {
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px 0;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--cor-primaria);
+    height: auto;
 }
 
-nav a {
-    color: white;
+ul {
+    display: flex;
+   
+}
+a {
     text-decoration: none;
-    font-weight: bold;
+    color: var(--texto-claro);
 }
+ li  {
+    list-style: none;
+    margin: 15px;
 
-.hero {
-    background: url('background.jpg') no-repeat center center/cover;
-    height: 400px;
+ }
+
+ .senai {
+    width: 150px;
+ }
+
+ .contato {
+    background-color:var(--cor-secundaria);
+    padding: 10px;
+    border-radius: 5px;
+ }
+ /* ________________ */
+ /* sessão header */
+
+ header {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+    background: url(/assets/imagem-fundo-banner.jpg) ;
+    text-align: center;
+    
+ }
+
+ .Bloco-header {
+
+    margin: auto;
+    margin-top:200px;
+    margin-bottom: 70px;
+ }
+ header img {
+    margin-bottom: 150px;
+ }
+
+
+ hr {
+    background-color: var(--cor-destaque);
+    padding: 1px;
+    color:  var(--cor-destaque);
+    margin: 10px;
+ }
+
+ h1 {
+    font-size: 70px;
+    
+ }
+
+ .texto {
+   font-size: 30px;
+ }
+/* ________________ */
+/* sessão main */
+
+.projetos {
     align-items: center;
     text-align: center;
+    background-color: #1a0508;
+   
+
 }
 
-.hero h1 {
-    font-size: 3rem;
-    margin: 0;
+.projetos h1 {
+    
+    margin-bottom: 20px;
+    color: var(--cor-primaria);
+    font-size: 40px;
+    padding: 30px;
+}
+.sessao{
+    margin-left: 20%;
+    margin-right: 50px;
+    margin-bottom: 70px;
 }
 
-.hero p {
-    font-size: 1.2rem;
+.amarelo {
+    margin-bottom: 30px;
+    font-size: 20px;
+    color: var(--cor-destaque);
+}
+.branco {
+color: var(--texto-claro);
 }
 
-.about {
-    padding: 40px;
-    background-color: #1e1e40;
-}
+ .bloco {
+    display: flex;
+    text-align: left;
 
-.about h2 {
+ }
+ 
+ .textos {
+    flex-direction: column;
+    margin-top: 150px;
+    color: var(--texto-cinza);
+ }
+ 
+ .sessao {
+    width: 500px;
+ }
+
+ /* ____________________ */
+ /* main com 2 informações*/
+
+ .informaçoes {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+ }
+ .container {
+    margin: 50px;
+    margin-top: 90px;
+   text-align: center;
+   background: #ffae002a;
+   
+   padding: 30px;
+   width: 200px;
+ }
+
+ .titulo {
+    color: var(--cor-destaque);
+ }
+
+ .container .p {
+    background: #080324;
+    padding: 20px;
+ }
+ /* __________________________ */
+ /* main 3 - mapa */
+
+ .mapa {
     text-align: center;
-    color: #ff0043;
-}
 
-.about-content {
+ }
+ .mapa h2 {
+    color: var(--cor-primaria);
+ }
+
+
+ .endereço {
     display: flex;
     justify-content: space-between;
-    gap: 20px;
-    align-items: center;
-}
+    text-align: left;
+    margin: 100px;
+    justify-content: space-between;
+ }
 
-.about-content img {
-    max-width: 50%;
+ .alinhamento {
+
+    margin-top: 300px;
+    
+ }
+ 
+ .map {
     border-radius: 10px;
-}
+ }
 
-.stats {
-    display: flex;
-    justify-content: space-around;
-    background-color: #241757;
-    padding: 20px 0;
-    margin-top: 20px;
-}
+ .img {
+   
+    width: 500px;
+    align-items: flex-start;
+ }
 
-.stats div {
+
+ /* __________________________ */
+ /* footer */
+ footer {
+    width: 100%;
+    background: var(--cor-primaria);
     text-align: center;
-}
-
-.stats div h3 {
-    color: #ffb400;
-}
-
-footer {
-    background-color: #ff0043;
-    text-align: center;
-    padding: 20px 0;
-}
-
-.address {
-    text-align: center;
-    padding: 20px;
-}
-
-.map {
-    text-align: center;
-}
-
-.map img {
-    max-width: 100%;
-    border-radius: 10px;
-}
+    padding: 15px;
+ }
